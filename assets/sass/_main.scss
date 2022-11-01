@@ -345,7 +345,7 @@ header
   &::before{ @include absoluteCenter; margin: 0; width: initial; height: initial; }
 }
 
-.client { margin: 24.6rem 0 16.4rem 0; position: relative;
+.client { margin-top: 69rem; width: 100vw; position: relative;
   .h2-heading{ font-size: 3rem; }
   &__bg{ z-index: 0; > div{ border-radius: 50%; position: absolute; } > img{ position: absolute; }
     .circle-1{ width: 33.4rem; height: 33.4rem; background-color: #3B6AC8; top: 37.7rem; left: -13rem; }
@@ -357,14 +357,14 @@ header
     }
   }
   .container{ position: relative; }
-  .projects__info{ display: flex; justify-content: space-between; align-items: center;
+  .projects__info__heading-margin{ display: flex; justify-content: space-between; align-items: center;
     i{ font-weight: 600 !important; font-size: 4rem; color: #7e7a8c; @include animateIt; cursor: pointer; outline: none;
       &:hover{ color: #6c43f8; }
       &:last-child{ margin-left: 2.5rem; }
     }
     div{ margin-right: 8.5rem; }
   }
-  .testimonial-slider{ width: 100%; margin-top: 4.3rem;
+  .testimonial-slider{ margin-top: 69rem; width: 100vw; position: relative;
     .single-testimonial{ background-color: $bg-white; display: flex; flex-direction: column; 
       justify-content: center; align-items: center; padding: 4rem 0;
       > .paragraph{ text-align: center; width: 80%; margin: 0 auto; font-style: italic; font-weight: 300 !important; }
@@ -377,7 +377,7 @@ header
       // &:nth-child(n+2){ margin-left: 5rem; }
     }
   }
-  .client-slider{ width: 100%; margin-top: 11.1rem;
+  .client-slider{ margin-top: 69rem; width: 100vw; position: relative;
       .single-client{ width: 100%; text-align: center;
         a{ opacity: .4; @include animateIt; 
           &:hover{ opacity: 1; }
