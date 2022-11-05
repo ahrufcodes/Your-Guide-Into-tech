@@ -1,57 +1,5 @@
 
 /********************
-preloader
-********************/
-.preloader{position: fixed; top: 0; width: 100vw; height: 100vh; z-index: 200; @include animateIt; transition-delay: 1s;
-  background-color: #3cacfe;
-  &__svg{@include absoluteCenter;
-    &-path:nth-child(1) {
-    stroke-dasharray: 155.26px;
-    stroke-dashoffset: 155.26px;
-    @include line-anim-mixin(1,155.26px);
-    animation: line-anim-1 3s ease forwards infinite;
-    }
-    &-path:nth-child(2) {
-    stroke-dasharray: 240.69px;
-    stroke-dashoffset: 240.69px;
-    @include line-anim-mixin(2,240.69px);
-    animation: line-anim-2 3s ease forwards infinite;
-    }
-    &-path:nth-child(3) {
-    stroke-dasharray: 222.78px;
-    stroke-dashoffset: 222.78px;
-    @include line-anim-mixin(3,222.78px);
-    animation: line-anim-3 3s ease forwards infinite;
-    }
-    &-path:nth-child(4) {
-    stroke-dasharray: 252.96px;
-    stroke-dashoffset: 252.96px;
-    @include line-anim-mixin(4,252.96px);
-    animation: line-anim-4 3s ease forwards infinite;
-    }
-    &-path:nth-child(5) {
-    stroke-dasharray: 110.33px;
-    stroke-dashoffset: 110.33px;
-    @include line-anim-mixin(5,110.33px);
-    animation: line-anim-5 3s ease forwards infinite;
-    }
-    &-path:nth-child(6) {
-    stroke-dasharray: 251.91px;
-    stroke-dashoffset: 251.91px;
-    @include line-anim-mixin(6,251.91px);
-    animation: line-anim-6 3s ease forwards infinite;
-    }
-    &-path:nth-child(7) {
-    stroke-dasharray: 233.91px;
-    stroke-dashoffset: 233.91px;
-    @include line-anim-mixin(7,233.91px);
-    animation: line-anim-7 3s ease forwards infinite;
-    }
-  }
-}
-body.loaded .preloader{ transform: translateY(-100%);  }
-
-/********************
 header
 ********************/
 .header{ position: absolute; top: 0; z-index: 100; background-color: transparent; padding: 3.6rem 0 5rem 0; width: 100%;
@@ -295,56 +243,7 @@ header
     margin-top: 120rem;
   }
 }
-.mfp-zoom-in {
   
-  /* start state */
-  .mfp-with-anim {
-    opacity: 0;
-    transition: all 0.2s ease-in-out; 
-    transform: scale(0.8); 
-  }
-  
-  &.mfp-bg {
-    opacity: 0;
-	  transition: all 0.3s ease-out;
-  }
-  
-  /* animate in */
-  &.mfp-ready {
-    .mfp-with-anim {
-      opacity: 1;
-      transform: scale(1); 
-    }
-    &.mfp-bg {
-      opacity: 0.8;
-    }
-  }
-  
-  /* animate out */
-  &.mfp-removing {
-    
-    .mfp-with-anim {
-      transform: scale(0.8); 
-      opacity: 0;
-    }
-    &.mfp-bg {
-      opacity: 0;
-    }
-    
-  }
-  
-}
-.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close{
-  cursor:-moz-pointer; cursor:-webkit-pointer; cursor: pointer;
-}
-.mfp-title{ font-size: 2rem; color: $text-color-light; }
-.mfp-bottom-bar{ margin-top: -2.6rem; }
-.mfp-arrow-right:after, .mfp-arrow:after{ border: none; opacity: 1; }
-.mfp-arrow-right:before, .mfp-arrow:before{ border: none; opacity: 1; }
-.mfp-arrow{ font-weight: 900 !important; color: orange; font-size: 3rem; 
-  &::before{ @include absoluteCenter; margin: 0; width: initial; height: initial; }
-}
-
 .client { margin-top: 69rem; width: 100vw; position: relative;
   .h2-heading{ font-size: 3rem; }
   &__bg{ z-index: 0; > div{ border-radius: 50%; position: absolute; } > img{ position: absolute; }
