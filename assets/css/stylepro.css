@@ -1,0 +1,65 @@
+
+      .h1-heading{
+          
+        color:#ffffff;
+        -webkit-animation:colorchange 20s infinite alternate;
+        
+        
+      }
+  
+      @-webkit-keyframes colorchange {
+        0% {
+          
+          color: #ffffff;
+        }
+        
+        10% {
+          
+          color: #ffffff;
+        }
+        
+        20% {
+          
+          color: #00ED85;
+        }
+        
+        30% {
+          
+          color: #FBBC05;
+        }
+        
+        40% {
+          
+          color: #fff;
+        }
+        
+        50% {
+          
+          color: #00ED85;
+        }
+        
+        30% {
+          
+          color: #131313;
+        }
+        
+        20% {
+          
+          color: #00ED85;
+        }
+        10% {
+       
+          color: #ffff;
+        }
+        
+        30% {
+       
+          color: #FBBC05};
+        }
+        
+        100% {
+          
+          color: #ffff;
+          
+        }
+      }
