@@ -1,65 +1,25 @@
+.h1-heading{
+          
+-webkit-animation:colorchange 20s infinite alternate;
+        
 
-      .h1-heading{
-          
-        color:#ffffff;
-        -webkit-animation:colorchange 20s infinite alternate;
-        
-        
-      }
+}
   
-      @-webkit-keyframes colorchange {
-        0% {
+@-webkit-keyframes colorchange {
+0% {
           
-          color: #ffffff;
-        }
+color: #ffff;
+ }
         
-        10% {
+30% {
           
-          color: #ffffff;
-        }
+color: #00ED85;
+}
         
-        20% {
-          
-          color: #00ED85;
-        }
         
-        30% {
+40% {
           
-          color: #FBBC05;
-        }
-        
-        40% {
-          
-          color: #fff;
-        }
-        
-        50% {
-          
-          color: #00ED85;
-        }
-        
-        30% {
-          
-          color: #131313;
-        }
-        
-        20% {
-          
-          color: #00ED85;
-        }
-        10% {
-       
-          color: #ffff;
-        }
-        
-        30% {
-       
-          color: #FBBC05};
-        }
-        
-        100% {
-          
-          color: #ffff;
-          
-        }
-      }
+color: #fff;
+}
+
+}
